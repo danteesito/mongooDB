@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado</title>
+</head>
+<body>
+    <h1>Lista de juegos</h1>
+    <% juegos.forEach(function(juego) { %>
+        <h2><%= juego.nombre %></h2>
+        <p><%= juego.desarrollador %></p>
+        <p><%= juego.plataforma %></p>
+        <p><%= juego.lanzamiento %></p>
+        <p><%= juego.genero %></p>
+        <ul>
+            <% juego.modosdejuego.forEach(function(modo) { %>
+                <li><%= modo.nombre %> - <%= modo.jugadores %> - <%= modo.rondas %></li>
+            <% }); %>
+        </ul>
+    <% }); %>
+</body>
+</html>
