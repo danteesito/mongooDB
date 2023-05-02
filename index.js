@@ -59,3 +59,14 @@ nuevoJuego.save()
     mongoose.connection.close 
     console.log('se desconecto correctamente')
 });
+/*crear cuenta en mongo atlas = crear datos de forma gratuita en la nube
+pass num 1 crear un cluster
+paso num 2 crear una coleccion 
+pass num 3 crear un documento basado en la tematica que quere.
+pass num 4 añadir ese documento al menos 5 columnas/valores
+pass num 4 agregar al menos 5 filas de ese documento
+pass num 5 crear un pequeño servidor con express
+pass num 6 instalar mongoose
+pass num 8 lograr que el servidor se conecte que el servidor se conecte la cuenta de mongo atlas
+pass num 9 que el servidor escriba en la consola que se logro conectar
+*/
